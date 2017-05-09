@@ -5,7 +5,7 @@
     <%= form_for(@blog) do |f| %>
     <%= f.hidden_field :title %>
     <%= f.hidden_field :content %>
-    <p>タイトル:<%= @blog.title,class: ''%></p>
+    <p>タイトル:<%= @blog.title %></p>
     <p>本文:<%= @blog.content %></p>
     <%= f.submit "登録する",class:'btn btn-primary btn-block' %>
     <% end %>
