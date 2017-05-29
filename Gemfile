@@ -72,6 +72,7 @@ gem 'carrierwave'
 
 gem 'rmagick'
 
+
 group :development do
 
   gem 'letter_opener_web'
@@ -79,3 +80,5 @@ group :development do
   gem 'dotenv-rails'
 
 end
+
+gem 'jquery-turbolinks'
