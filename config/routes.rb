@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'relationships/create'
-
-  get 'relationships/destroy'
+  get 'notifications/index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
@@ -27,6 +25,10 @@ Rails.application.routes.draw do
 	end
 
   resources :poems, only: [:index, :show]
+
+  resources :conversations do
+    resources :messages
+  end
 
   root 'top#index'
 
